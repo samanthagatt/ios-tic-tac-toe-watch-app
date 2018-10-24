@@ -20,34 +20,85 @@
                                         <label width="85" alignment="center" verticalAlignment="center" text="Player X's turn" minimumScaleFactor="0.69999999999999996" id="Y32-he-Qbm"/>
                                         <button width="40" height="1" alignment="center" verticalAlignment="center" title="Reset" id="aeE-0U-e8y">
                                             <fontDescription key="font" type="system" pointSize="10"/>
+                                            <connections>
+                                                <action selector="resetBoard" destination="AgC-eL-Hgc" id="ytf-FA-P1D"/>
+                                            </connections>
                                         </button>
                                     </items>
                                 </group>
                                 <group alignment="center" verticalAlignment="center" spacing="5" id="JaD-fI-afs">
                                     <items>
-                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="1" id="Jwu-4y-7Ku"/>
-                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="2" id="tOB-59-trM"/>
-                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="3" id="TwQ-lX-Uz0"/>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title=" " id="Jwu-4y-7Ku">
+                                            <connections>
+                                                <action selector="placeMarkAt0" destination="AgC-eL-Hgc" id="yp7-go-gyk"/>
+                                            </connections>
+                                        </button>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title=" " id="tOB-59-trM">
+                                            <connections>
+                                                <action selector="placeMarkeAt1" destination="AgC-eL-Hgc" id="wUd-Ip-LJN"/>
+                                            </connections>
+                                        </button>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title=" " id="TwQ-lX-Uz0">
+                                            <connections>
+                                                <action selector="placeMarkAt2" destination="AgC-eL-Hgc" id="NfZ-3l-Vgd"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                                 <group alignment="center" verticalAlignment="center" spacing="5" id="Ll5-sx-03f">
                                     <items>
-                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="4" id="MCV-ag-bPx"/>
-                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="5" id="zk4-sm-Mi1"/>
-                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="6" id="ORO-bK-cbx"/>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title=" " id="MCV-ag-bPx">
+                                            <connections>
+                                                <action selector="placeMarkAt3" destination="AgC-eL-Hgc" id="a7E-g2-lao"/>
+                                            </connections>
+                                        </button>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title=" " id="zk4-sm-Mi1">
+                                            <connections>
+                                                <action selector="placeMarkAt4" destination="AgC-eL-Hgc" id="FOE-aq-eJu"/>
+                                            </connections>
+                                        </button>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title=" " id="ORO-bK-cbx">
+                                            <connections>
+                                                <action selector="placeMarkAt5" destination="AgC-eL-Hgc" id="suX-1g-Bc9"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                                 <group alignment="center" verticalAlignment="center" spacing="5" id="NCU-CY-yIe">
                                     <items>
-                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="7" id="8bn-vt-ye6"/>
-                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="8" id="sZk-ao-z8K"/>
-                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="9" id="MbP-cI-bBE"/>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title=" " id="8bn-vt-ye6">
+                                            <connections>
+                                                <action selector="placeMarkAt6" destination="AgC-eL-Hgc" id="6XN-sM-x8k"/>
+                                            </connections>
+                                        </button>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title=" " id="sZk-ao-z8K">
+                                            <connections>
+                                                <action selector="placeMarkAt7" destination="AgC-eL-Hgc" id="ips-ch-ac4"/>
+                                            </connections>
+                                        </button>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title=" " id="MbP-cI-bBE">
+                                            <connections>
+                                                <action selector="placeMarkAt8" destination="AgC-eL-Hgc" id="io4-ZE-d92"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                             </items>
                             <edgeInsets key="margins" left="0.0" right="0.0" top="10" bottom="0.0"/>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="button0" destination="Jwu-4y-7Ku" id="tVa-bo-PNB"/>
+                        <outlet property="button1" destination="tOB-59-trM" id="nAE-Lt-rAN"/>
+                        <outlet property="button2" destination="TwQ-lX-Uz0" id="bET-Zk-bb2"/>
+                        <outlet property="button3" destination="MCV-ag-bPx" id="psA-e8-cBo"/>
+                        <outlet property="button4" destination="zk4-sm-Mi1" id="bMs-83-qic"/>
+                        <outlet property="button5" destination="ORO-bK-cbx" id="BHN-WM-IR3"/>
+                        <outlet property="button6" destination="8bn-vt-ye6" id="mF8-Fd-nmo"/>
+                        <outlet property="button7" destination="sZk-ao-z8K" id="ZFy-KN-4QL"/>
+                        <outlet property="button8" destination="MbP-cI-bBE" id="p7w-SZ-iaD"/>
+                        <outlet property="statusLabel" destination="Y32-he-Qbm" id="HCL-82-ZNZ"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
