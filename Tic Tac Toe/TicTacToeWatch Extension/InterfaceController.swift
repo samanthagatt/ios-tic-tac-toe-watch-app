@@ -12,6 +12,15 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     
+    // MARK: - WKInterfaceController
+    
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
+        
+        updateViews()
+    }
+    
+    
     // MARK: - Private Properties
     
     private var game = Game()
@@ -34,16 +43,6 @@ class InterfaceController: WKInterfaceController {
     
     
     // MARK: - Private Functions
-    
-    private func makeMark(at coordinate: (Int, Int)) {
-        do {
-            try game.makeMark(at: coordinate)
-        } catch {
-            NSLog("Illegal move")
-        }
-        
-        updateViews()
-    }
 
     private func updateViews() {
         if let winner = game.winningPlayer?.stringValue {
@@ -64,6 +63,15 @@ class InterfaceController: WKInterfaceController {
         button7.setTitle(game.board[(2, 1)]?.stringValue ?? "")
         button8.setTitle(game.board[(2, 2)]?.stringValue ?? "")
     }
+    private func makeMark(at coordinate: (Int, Int)) {
+        do {
+            try game.makeMark(at: coordinate)
+        } catch {
+            NSLog("Illegal move")
+        }
+        
+        updateViews()
+    }
     
     
     // MARK: - Actions
@@ -76,7 +84,7 @@ class InterfaceController: WKInterfaceController {
     @IBAction func placeMarkAt0() {
         makeMark(at: (0, 0))
     }
-    @IBAction func placeMarkeAt1() {
+    @IBAction func placeMarkAt1() {
         makeMark(at: (0, 1))
     }
     @IBAction func placeMarkAt2() {

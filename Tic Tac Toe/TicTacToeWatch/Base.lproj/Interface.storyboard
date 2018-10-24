@@ -35,7 +35,7 @@
                                         </button>
                                         <button width="40" height="35" alignment="center" verticalAlignment="center" title=" " id="tOB-59-trM">
                                             <connections>
-                                                <action selector="placeMarkeAt1" destination="AgC-eL-Hgc" id="wUd-Ip-LJN"/>
+                                                <action selector="placeMarkAt1" destination="AgC-eL-Hgc" id="ct3-va-wp6"/>
                                             </connections>
                                         </button>
                                         <button width="40" height="35" alignment="center" verticalAlignment="center" title=" " id="TwQ-lX-Uz0">
