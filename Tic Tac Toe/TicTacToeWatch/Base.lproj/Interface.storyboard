@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller fullBounds="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TicTacToeWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" spacing="5" id="nt4-mY-4Qo">
+                            <items>
+                                <group width="1" alignment="center" verticalAlignment="center" spacing="5" id="512-W0-72w">
+                                    <items>
+                                        <label width="85" alignment="center" verticalAlignment="center" text="Player X's turn" minimumScaleFactor="0.69999999999999996" id="Y32-he-Qbm"/>
+                                        <button width="40" height="1" alignment="center" verticalAlignment="center" title="Reset" id="aeE-0U-e8y">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group alignment="center" verticalAlignment="center" spacing="5" id="JaD-fI-afs">
+                                    <items>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="1" id="Jwu-4y-7Ku"/>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="2" id="tOB-59-trM"/>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="3" id="TwQ-lX-Uz0"/>
+                                    </items>
+                                </group>
+                                <group alignment="center" verticalAlignment="center" spacing="5" id="Ll5-sx-03f">
+                                    <items>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="4" id="MCV-ag-bPx"/>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="5" id="zk4-sm-Mi1"/>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="6" id="ORO-bK-cbx"/>
+                                    </items>
+                                </group>
+                                <group alignment="center" verticalAlignment="center" spacing="5" id="NCU-CY-yIe">
+                                    <items>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="7" id="8bn-vt-ye6"/>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="8" id="sZk-ao-z8K"/>
+                                        <button width="40" height="35" alignment="center" verticalAlignment="center" title="9" id="MbP-cI-bBE"/>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="10" bottom="0.0"/>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+    </scenes>
+</document>
